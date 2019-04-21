@@ -1,0 +1,13 @@
+doctype html
+html(lang='zh-cn')
+  head
+    meta(charset='UTF-8')
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+  body
+    h1.signtitle= title
+    form.signform(action='/qr/sign?id=' + id + '&date=' + date +'&title=' + title, method='post')
+      input#signinput(type="text" name="student_name" placeholder="姓名")
+      input#signinput(type="text" name="student_id" placeholder="学号")
+      button#signsubmit.hw(type="submit") 提交
