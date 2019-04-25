@@ -4,8 +4,10 @@
 
 # 部署与安装说明
 
-环境 linux_x86_64
-安装node, npm, 部署mongodb
+开发环境： linux_x86_64
+
+安装nodejs v6版本和对应的npm, 部署mongodb
+
 在project 目录下，执行
 
 ```sh
